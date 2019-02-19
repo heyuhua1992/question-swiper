@@ -1,7 +1,7 @@
 <template>
 <div id="">
-  this is index page
-  <div class="swiper-container">
+  this is ok page
+  <!-- <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
        1
@@ -16,14 +16,11 @@
        4
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 </template>
 
 <script>
-import Swiper from 'swiper'
-import 'swiper/dist/css/swiper.min.css'
-
 export default {
   data () {
     return {
@@ -31,9 +28,9 @@ export default {
     }
   },
   mounted () {
-    this.swiper = new Swiper('.swiper-container', {
-      resistanceRatio: 0.5
-    })
+    // this.swiper = new Swiper('.swiper-container', {
+    //   resistanceRatio: 0.5
+    // })
   }
 }
 </script>

@@ -7,8 +7,6 @@ import 'vue2-toast/lib/toast.css'
 import Toast from 'vue2-toast'
 import './assets/scss/global.scss'
 import '../static/js/reset-rem'
-import 'swiper/dist/css/swiper.min.css'
-import Swiper from 'swiper'
 
 Vue.use(Toast, {
   type: 'center',
@@ -17,7 +15,6 @@ Vue.use(Toast, {
   width: 'auto'
 })
 Vue.config.productionTip = false
-Vue.prototype.$swiper = Swiper
 Vue.prototype.$baseUrl = './static/image/'
 Vue.prototype.$version = '?v20181217'
 /* eslint-disable no-new */
