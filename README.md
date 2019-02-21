@@ -19,3 +19,25 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+修改了webpack.base.conf
+修改前
+```
+{
+  test: /\.js$/,
+  loader: 'babel-loader',
+  include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+},
+```
+修改后
+```
+{
+  test: /\.js$/,
+  loader: 'babel-loader',
+  include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client'), resolve('node_modules/swiper'), resolve('node_modules/dom7'), resolve('node_modules/ssr-window')]
+},
+```
+
+
+现在还有问题就是 不能左右滑动
